@@ -1,7 +1,7 @@
 #step 0 : Build
 FROM node:16 AS build-step
 
-WORKDIR /build
+WORKDIR /cs-website
 
 COPY package.json package-lock.json ./
 RUN npm install
@@ -12,4 +12,4 @@ RUN npm run build
 FROM nginx:1.18-alpine
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /build/build /frontend/build
+COPY --from=build /build/build /cs-website/build
