@@ -1,15 +1,15 @@
 #step 0 : Build
-FROM node:16 as build
+FROM node:16 AS build-step
 
-WORKDIR /app
+WORKDIR /build
 
-COPY package*.json .
+COPY package.json package-lock.json ./
 RUN npm install
 COPY . .
 RUN npm run build
 
 #step 1 : Buat container
-FROM nginx:1.19
+FROM nginx:1.18-alpine
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /build/build /frontend/build
