@@ -1,5 +1,5 @@
 #step 0 : Build
-FROM node:16 AS build-step
+FROM node:16 
 
 WORKDIR /app
 
@@ -13,4 +13,3 @@ FROM nginx:1.18-alpine
 WORKDIR /src
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /app/build /usr/share/nginx/html
