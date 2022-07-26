@@ -12,4 +12,4 @@ RUN npm run build
 FROM nginx:1.18-alpine
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
-COPY --from=build /build/build /cs-website/build
+COPY --from=build /cs-website/build /usr/share/nginx/html
