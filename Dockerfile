@@ -10,6 +10,7 @@ RUN npm run build
 
 #step 1 : Buat container
 FROM nginx:1.18-alpine
+WORKDIR /src
 
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /cs-website/build /usr/share/nginx/html
