@@ -33,7 +33,7 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>Developed By Yosef @YozzyLazzy</small>
+          <small class='website-rights'>Developed By Garuda Puspa</small>
 
         </div>
       </section>
