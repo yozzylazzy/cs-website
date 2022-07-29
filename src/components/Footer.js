@@ -10,18 +10,18 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Yosef Adrian - 2020130002</h2>
+            <h2>Yosef Adrian</h2>
           </div>
           <div class='footer-link-items'>
-            <h2>Jonathan Krisna - 2020130017</h2>
+            <h2>Jonathan Krisna</h2>
           </div>
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>Nicholas Suardiman - 2020130001</h2>
+            <h2>Muhammad Arby Sofyan</h2>
           </div>
           <div class='footer-link-items'>
-            <h2>R Nur Asyifa Agustina M - 2020130001</h2>
+            <h2>Andre Yonathan</h2>
           </div>
         </div>
       </div>
